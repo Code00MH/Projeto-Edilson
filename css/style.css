@@ -1,6 +1,6 @@
 /*CLASS*/
 .branco   { color: #ffffff; }
-.azul     { color: #4a688e; }
+.azul     { color: #c1440e; }
 .vermelho { color: #e83654; }
 
 .title { width:100%; float:left; margin-bottom:40px; padding-bottom:10px;  font-family:'open_sansbold'; font-size:2em; font-weight:bold; text-transform:uppercase; }
@@ -20,7 +20,7 @@
 .content { float:left; width:92%; margin:0 4%; padding: 20px 0; }
 
 /*HEADER*/
-.main_header          { background:#ffffff; z-index:1; }
+.main_header          { background:#c1440e; z-index:1; }
 .main_header .content { float:left; padding:0px 0; }
 .main_header.fixed { display:block; position:fixed; z-index:99; }
 
@@ -34,9 +34,11 @@
 /*1279PX BREAKPOINT - 1279 dividido por 16 = 79.9375em*/
 @media (max-width: 79.9375em){
 .main_header_nav { position:absolute; left:100%; background-color:#000000; top:0; width:100%; min-width:200px; max-width:360px; height:100%; overflow:hidden; overflow-y:auto; -webkit-box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); -moz-box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); box-shadow:5px 0px 5px -5px rgba(0,0,0,0.75); z-index:99;  }
-.main_header_nav_item      { float:left; width:100%; position:relative; border-bottom:1px #273b42 solid; }
-.main_header_nav_item > a  { float:left; width:100%; padding:8px 23px; font-family:'open_sansregular'; text-decoration:none; color:#ffffff; font-size:1em; }
-.main_header_nav_item:hover,.main_header_nav_item > a:hover { background-color:#4a688e; color:#fff; }
+.main_header_nav_item      { float:left; width:100%; position:relative; border-bottom:1px #ffffff solid; }
+.main_header_nav_item > a  { color:#ffffff; float:left; padding:1.5em 1em; font-size:0.95em; font-family:'open_sansbold'; text-decoration:none; text-transform:uppercase; }
+.main_header_nav a:hover, 
+.main_header_nav> li:hover > a { background:transparent; color:#ffd699; }
+
 .main_header_nav_item  span   { width:25px; height:25px; line-height:28px; text-align:center; font-size:1.2em; float:right; display:block; }
 
 }
