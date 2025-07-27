@@ -5,6 +5,24 @@
 
 .title { width:100%; float:left; margin-bottom:40px; padding-bottom:10px;  font-family:'open_sansbold'; font-size:2em; font-weight:bold; text-transform:uppercase; }
 .title.center { text-align:center; }
+/* Animação fade */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.aparecer {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slogan {
+  color: #fff;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
 
 /*Botão Padrao Inicio*/
 .btn{ padding:10px 15px; color:#0e2a34; font-family:'open_sansregular'; letter-spacing:2px; text-align:center; position:relative; border-radius:3px; text-decoration:none; display:inline-block; font-size:1em; text-align:center; border:1px solid #0e2a34; overflow: hidden!important; -webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; -o-transition: all .4s ease-in-out; transition: all .4s ease-in-out; background: transparent!important; z-index:10; }
@@ -69,7 +87,15 @@
 .hover_servicos:hover .appIcone  { left:0; top:23%; opacity:100; }
 .hover_servicos:hover .appTitulo { left:0; top:33%; opacity:100; }
 .hover_servicos:hover .appFoto  { left:0; top:0;  opacity:1; -webkit-transform:scale(1); transform:scale(1); transition:all 500ms; -moz-transition:all 500ms;  -ms-transition:all 500ms; -o-transition:all 500ms; -webkit-transition:all 500ms; }
-.hover_servicos .appFoto   { left:0; top:0; opacity:1; -webkit-transform:scale(1.05); transform:scale(1.05); max-width:100%!important; width:100%; height:auto; border-radius:auto; position:relative   ; border:none; display:block; }
+.hover_servicos .appFoto {
+    width: 100%;
+    height: auto;
+    border-radius: 0; 
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto;
+}
+
 .hover_servicos .appIcone  { display:block; font-family: Helvetica, sans-serif; position:absolute; opacity:0; top:18%; left:0; z-index:3; color:#fff; text-align:center; width:100%; font-size:3em; }
 .hover_servicos .appTitulo { display:block; font-family: Helvetica, sans-serif; position:absolute; opacity:0; top:35%; left:0; z-index:3; color:#fff; text-align:center; width:100%; font-size:1em; text-decoration:none;  }
 .hover_servicos .appIcone,.appTitulo,.appFoto, .hover_servicos .hover_servicos_hover{ transition:all 500ms; -moz-transition:all 500ms; -ms-transition:all 500ms; -o-transition:all 500ms; -webkit-transition:all 500ms; }

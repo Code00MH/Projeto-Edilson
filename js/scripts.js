@@ -54,3 +54,18 @@ $(function () {
     });
 
 });
+
+  const elementos = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer');
+        observer.unobserve(entry.target); // para animar só uma vez
+      }
+    });
+  }, {
+    threshold: 0.1 // inicia quando 10% do elemento estiver visível
+  });
+
+  elementos.forEach(el => observer.observe(el));
